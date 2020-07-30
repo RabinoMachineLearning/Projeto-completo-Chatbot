@@ -5,17 +5,331 @@
   
 
 
-</head>
-  </style> -->
-    <style>.fundo-slider { position:relative; display: flex; overflow:hidden; } .fundo-slider img { max-width: initial; } .box-01-total { padding : 30px 0px; background: #333; } .box-01 { width: 830px; margin: 0 auto; text-align:center; } .box-01 .titulo { font: 80px 'cursiva'; color: #fff; margin-bottom: 10px; } .box-01 .conteudo { font: 25px 'calibri'; font-weight:lighter; color: #fff; } .box-02-total { padding: 20px 0px; } .box-02 { width: 1200px; margin: 0 auto; } .box-02 > .titulo { font: 70px 'cursiva'; color: #333; text-align:center; margin-bottom: 10px; } .box-02 .box { display: flex; flex-wrap: wrap; justify-content: space-around; } .box-02 .box .item { margin: 20px 0px; width: 300px; padding: 20px; border-radius: 20px; transition: all 0.5s; } .box-02 .box .item:hover { background: #f8f8f8; transition: all 0.5s; } .box-02 .box .item .titulo { font: 30px 'calibri'; color: #333; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 2px solid #eee; display: flex; align-items: center; justify-content: center; } .box-02 .box .item .titulo i { color: inherit; font-size: 45px; padding-right: 20px; } .box-02 .box .item .conteudo { font: 19px/18px 'calibri'; color: #333; } .box-03-total { background: #333; padding: 20px 0px; } .box-03 { width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; } .box-03 .item { width: 500px; margin: 20px 0px; } .box-03 .item > .titulo { font: 52px 'cursiva'; color: #fff; margin-bottom: 10px; } .box-03 .item .contato { padding: 10px; } .mapa { display: flex; position: relative; border: 2px solid #fff; height: 379px; }</style>
-    <link rel="stylesheet" href="pw-font-awesome/css/all.css">
-    <script src='https://www.google.com/recaptcha/api.js'></script> 
-    <style>
-        .logo-pw a {
-            text-align: center;
-            padding-top: 10px;
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97813525-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
         }
-    </style>
+        gtag('js', new Date());
+
+        gtag('config', 'UA-97813525-1');
+    </script>
+    <!-- Google ADS FIM -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta name="title" content="Site Padrão Lançamento - Modelo 5" />
+<link rel='stylesheet' type='text/css' href='template/pw-slider-engine/style.css' />
+
+    <title>Site Padrão Lançamento - Modelo 5</title>
+
+    <link href='favicon.png' rel='shortcut icon' type='image/x-icon' />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="https://www.projetoweb.com.br:443/sites-padrao-prontos-simples-baratos-lancamentos/padrao5-programado/template/pw-css/style.css" />
+    <!-- <style>div:hover > .btn { display: block; opacity: 1; transform: rotate(360); transition: all 1s; } .btn { text-align: center; margin: 0 auto; width: 100%; height: 40px; padding: 5px 0px; bottom: 0px; z-index: 999; cursor: pointer; opacity: 0.6; transition: all 1s; } .btn.absolute { position: absolute; } .btn > div { width: 100px; display: inline-block; } .btn .remove::before {    font-weight: 900; content: "\f05e"; font-family: "Font Awesome 5 Free"; font-size: 40px; color: #000; width: 100%; text-align: center; display: block; } .btn .remove::after { content: ""; font-family: calibri; font-size: 14px; color: #000; width: 100%; text-align: center; display: block; } .btn .add::before { font-weight: 900; content: "\f055"; font-family: "Font Awesome 5 Free"; font-size: 40px; color: #000; width: 100%; text-align: center; display: block; } .btn .add::after { content: "RETORNAR"; font-family: calibri; font-size: 16px; color: #000; width: 100%; text-align: center; display: block; } .btn.white *::before, .btn.white *::after { color: #fff !important; }
+* {
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0
+}
+
+#erro-total {
+    width: 700px;
+    height: 270px;
+    margin: 15px 0
+}
+
+#imagem-centralizada {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0
+}
+
+#texto-404 {
+    width: 100%;
+    font-family: Calibri;
+    font-size: 22px;
+    text-align: center
+}
+
+#aguarde {
+    width: 100%;
+    font-family: Calibri;
+    font-size: 19px;
+    text-align: center;
+    margin: 5px 0
+}
+
+.page-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px
+}
+
+a {
+    text-decoration: none
+}
+
+.global {
+    margin: 0 auto
+}
+
+.conteudo-pages {
+    min-height: 500px;
+    width: 998px;
+    margin: 0 auto
+}
+
+.texto-pages {
+    font: 15px/25px Calibri;
+    color: #000;
+    text-align: justify
+}
+
+.texto-pages h1 {
+    font: 25px Calibri;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #000
+}
+
+.texto-pages h2 {
+    font: 20px Calibri;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #000
+}
+
+.menu-resp {
+    display: none
+}
+
+.contato input {
+    width: 100%;
+    padding: 10px 20px;
+    background: #eee;
+    border: #ccc;
+    color: #666;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none!important;
+    font-size: 17px
+}
+
+.contato textarea {
+    width: 100%;
+    padding: 10px 20px;
+    background: #eee;
+    border: #ccc;
+    color: #666;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none!important;
+    resize: none;
+    height: 200px;
+    font-size: 17px
+}
+
+.contato .submit {
+    cursor: pointer;
+    background: #404040;
+    color: #fff
+}
+
+@font-face {
+    font-family: 'cursiva';
+    src: url(template/pw-fonts/C093000I_0.eot);
+    src: local(☺), url(../pw-fonts/C093000I_0.woff) format("woff"), url(../pw-fonts/C093000I_0.ttf) format("truetype"), url(../pw-fonts/C093000I_0.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    overflow-x: hidden
+}
+
+.topo-total {
+    background: #333
+}
+
+.topo {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.topo > div {
+    margin: 20px 0;
+    display: flex;
+    align-items: center
+}
+
+.menu li {
+    display: inline-block;
+    visibility: hidden
+}
+
+.menu li:last-child {
+    border: none
+}
+
+.menu li a {
+    display: block;
+    padding: 5px 15px;
+    font: 18px calibri;
+    color: #fff
+}
+
+.menu li:hover {
+    transition: all .5s;
+    background: #4a4a4a
+}
+
+.menu li a i {
+    color: inherit;
+    font-size: 25px;
+    padding-right: 5px
+}
+
+.menu li a.ativo {
+    background: #4a4a4a
+}
+
+.rodape-total {
+    background: #555;
+    padding: 40px 0;
+    position: relative
+}
+
+.rodape {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.rodape div {
+    font: 16px calibri;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center
+}
+
+.rodape div i {
+    font-size: 50px;
+    color: inherit;
+    padding-right: 10px;
+    border-right: 2px solid #4e4e4e;
+    margin-right: 10px
+}
+
+.logo-pw {
+    width: 145px;
+    margin: 0 !important;
+    display: table !important;
+    margin-left: auto !important;
+}
+
+.logo-pw div p:first-child a {
+    color: #fff;
+    font: 12px Helvetica;
+    margin-top: -5px;
+    display: block
+}
+
+.logo-pw div {
+    margin: 0 !important;
+    display: block;
+    text-align: left
+}
+
+.logo-pw div a span {
+    color: transparent
+}
+/* Index */
+
+.fundo-slider { position:relative; display: flex; overflow:hidden; } .fundo-slider img { max-width: initial; } .box-01-total { padding : 30px 0px; background: #333; } .box-01 { width: 830px; margin: 0 auto; text-align:center; } .box-01 .titulo { font: 80px 'cursiva'; color: #fff; margin-bottom: 10px; } .box-01 .conteudo { font: 25px 'calibri'; font-weight:lighter; color: #fff; } .box-02-total { padding: 20px 0px; } .box-02 { width: 1200px; margin: 0 auto; } .box-02 > .titulo { font: 70px 'cursiva'; color: #333; text-align:center; margin-bottom: 10px; } .box-02 .box { display: flex; flex-wrap: wrap; justify-content: space-around; } .box-02 .box .item { margin: 20px 0px; width: 300px; padding: 20px; border-radius: 20px; transition: all 0.5s; } .box-02 .box .item:hover { background: #f8f8f8; transition: all 0.5s; } .box-02 .box .item .titulo { font: 30px 'calibri'; color: #333; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 2px solid #eee; display: flex; align-items: center; justify-content: center; } .box-02 .box .item .titulo i { color: inherit; font-size: 45px; padding-right: 20px; } .box-02 .box .item .conteudo { font: 19px/18px 'calibri'; color: #333; } .box-03-total { background: #333; padding: 20px 0px; } .box-03 { width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; } .box-03 .item { width: 500px; margin: 20px 0px; } .box-03 .item > .titulo { font: 52px 'cursiva'; color: #fff; margin-bottom: 10px; } .box-03 .item .contato { padding: 10px; } .mapa { display: flex; position: relative; border: 2px solid #fff; height: 379px; }
+
+.g-recaptcha{
+	display: flex;
+	justify-content: center;	
+}
+
+@media only screen and (max-width:1200px) {
+    * {
+        max-width: 100%;
+        box-sizing: border-box
+    }
+    .conteudo-pages {
+        padding: 2%
+    }
+    .menu-total {
+        width: 100%;
+        display: block!important
+    }
+   
+    .menu li {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        opacity: 1!important;
+        visibility: visible;
+        transform: translate(0px)!important
+    }
+    .menu ul{
+    	display: flex;
+    	justify-content: center;
+    }
+    .rodape > div {
+        margin: 20px auto !important;
+    }
+}
+
+@media only screen and (max-width:800px) {
+	.rodape div{
+		width: 100% !important;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width:500px) {
+	.box-01 .titulo {
+	    font-size: 50px !important;
+	}
+
+	.box-02 > .titulo {
+	    font-size: 50px !important;
+	    margin-bottom: 0 !important;
+	}
+}
+
+@media only screen and (max-width:400px) {
+	.menu ul{
+		flex-wrap: wrap;
+	}
+	.menu li{
+		width: 50%;
+	}
+	.logo img{
+		padding:0 10px;
+		display: block;
+	}
+}
+
+</style> -->
   
 <body>
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
